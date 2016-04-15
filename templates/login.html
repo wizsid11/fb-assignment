@@ -4,5 +4,5 @@
   <br>
   <a href="/fblogin/logout" style="display:block">Logout</a><a href="/fblogin/home" style="display:block">Home</a><a href="/fblogin/detail">Detail</a>
 {% else %}
-  <a href="{% url 'social:begin' 'facebook' %}?next={{ request.path }}">Login with Facebook</a>
+  <a href="{% url 'social:begin' 'facebook' %}?next={{ request.path }}" style="display:block">Login with Facebook</a><a href="/fblogin/detail">Detail</a>
 {% endif %}
